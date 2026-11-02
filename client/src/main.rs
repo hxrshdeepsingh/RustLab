@@ -2,6 +2,7 @@
 use std::net::UdpSocket;
 
 fn main() -> std::io::Result<()> {
+
     // Create UDP socket
     let socket = UdpSocket::bind("0.0.0.0:0")?;
 

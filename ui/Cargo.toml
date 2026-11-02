@@ -1,0 +1,19 @@
+[package]
+name = "ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+vigem-rust = "0.2"
+windui = "0.11.1"
+
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
+incremental = false
+debug = false
+overflow-checks = false
